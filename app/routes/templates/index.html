@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if message %}
+        <p>{{ message }}</p>
+    {% else %}
+        <p>fail</p>
+    {% endif %}
+{% endblock %}
