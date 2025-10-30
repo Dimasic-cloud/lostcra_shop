@@ -47,7 +47,6 @@ class Users(Base):
                 backend=default_backend()
             )
             new_hash = kdf.derive(password.encode('utf-8'))
-
             return compare_digest(old_hash, new_hash)
         except Exception:
             return False
